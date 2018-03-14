@@ -22,6 +22,9 @@ public class Tequilada {
 
             	// Constrói a janela.
             	JFrame frame = new JFrame();
+            	
+            	// Aceitar Inputs
+            	frame.addKeyListener(controller);
 
             	// Coloca a visão dentro da janela.
             	frame.setContentPane(view);
@@ -38,7 +41,7 @@ public class Tequilada {
             	// Exibe a janela.
             	frame.setVisible(true);
             	
-            	Timer timer = new Timer(1000, controller);
+            	Timer timer = new Timer(100, controller);
             	
             	timer.start();
             }
